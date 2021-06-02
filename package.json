@@ -1,0 +1,18 @@
+{
+  "name": "staic-server",
+  "version": "1.0.0",
+  "description": "staic-server",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor": "bin/anydoor"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "staic-server",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "yargs": "^11.0.0"
+  }
+}

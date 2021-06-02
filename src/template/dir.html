@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 60px;
+        }
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        a {
+            color: #42b983;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        {{#each files}}
+        <li>
+            <a href="{{../dir}}/{{file}}">[{{icon}}]{{file}}</a>
+        </li>
+        {{/each}}
+    </ul>
+
+</body>
+
+</html>
